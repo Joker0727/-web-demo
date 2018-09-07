@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>MyDemo</title>
+	<style>
+
+	</style>
+</head>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	function start() {
+		var IP = $("#ip").val(),
+			Port = $("#port").val(),
+			Username = $("#account").val(),
+			Password = $("#password").val();
+			
+		window.location.href="video.html";     //在同当前窗口中打开窗口	
+	}
+</script>
+
+<body>
+
+	<input type="text" id="ip" value="192.168.1.100" />
+	<input type="text" id="port" value="80" />
+	<input type="text" id="account" value="admin" />
+	<input type="password" id="password" value="ccwc2631" />
+	<button type="button" id="start" onclick="start()">开始</button>
+
+</body>
+
+</html>
